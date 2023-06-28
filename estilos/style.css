@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.infos{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 548px;
+  
+}
+
+.infos h1{
+    font-size: 1.58em;
+    font-weight: 400;
+    color: rgba(119, 118, 118, 0.863);
+}
+
+.infos .sub{
+    padding-bottom: 20px;
+    font-size: 1.58em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.infos p{
+    color: rgba(90, 90, 90, 0.863);
+    font-size: 15px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.cards h1{
+   
+    
+    font-size: 23px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.cards p{
+    color: rgba(90, 90, 90, 0.863);
+    font-size: 15px;
+}
+
+.supervisor{
+    grid-area: a1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid hsl(180, 62%, 55%);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.sup-icon{
+    
+    padding-top: 22px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.team-builder{
+    grid-area: a2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid hsl(0, 78%, 62%);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    
+}
+
+.team-icon{
+    padding-top: 22px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.karma{
+    grid-area: a3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid hsl(34, 97%, 64%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.karma-icon{
+    padding-top: 22px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.calculator{
+    grid-area: a4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid hsl(212, 86%, 64%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calc-icon{
+    padding-top: 22px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+
+
+@media screen and (min-width: 900px) {
+   
+    
+   .cards{
+
+    display: grid;
+    gap: 30px;
+    max-width: 80vw;
+    grid-template-areas: ". . a2 a2 . ."
+    "a1 a1 a2 a2 a4 a4"
+    "a1 a1 a3 a3 a4 a4"
+    ". . a3 a3 . ."
+    ;
+   }
+}
